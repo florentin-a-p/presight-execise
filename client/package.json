@@ -1,22 +1,42 @@
 {
   "name": "presight-client",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@mantine/core": "^8",
+    "@mantine/hooks": "^8",
+    "@tabler/icons-react": "^3",
+    "@tanstack/react-query": "^5",
+    "@tanstack/react-virtual": "^3",
     "react": "~19.1.0",
     "react-dom": "~19.1.0",
     "react-router": "~7.5.0",
-    "react-router-dom": "~7.5.0",
-    "tailwindcss": "~4.1.3"
+    "react-router-dom": "~7.5.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "~4.1.3",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "~6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14",
     "@types/react": "~19.1.0",
     "@types/react-dom": "~19.1.2",
-    "@types/react-router": "~5.1.20",
-    "@types/react-router-dom": "~5.3.3",
-    "postcss": "~8.5.3",
-    "prettier": "~3.5.3"
+    "@vitejs/plugin-react": "~4.5.2",
+    "jsdom": "^26.1.0",
+    "postcss": "^8.5",
+    "postcss-preset-mantine": "^1",
+    "postcss-simple-vars": "^7",
+    "prettier": "~3.5.3",
+    "typescript": "~5.8.3",
+    "vite": "~6.3.5",
+    "vitest": "~3.2.4"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
   }
 }

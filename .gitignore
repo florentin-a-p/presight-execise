@@ -29,3 +29,7 @@ yarn-error.log*
 
 .parcel-cache
 .idea/
+# local SQLite database
+server/data/
+*.db-shm
+*.db-wal
